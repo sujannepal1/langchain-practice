@@ -21,7 +21,7 @@ class ChatBot:
     )
 
 
-bot = ChatBot()
-input = input("Ask me anything: ")
-result = bot.rag_chain.invoke(input)
-print(result)
+# bot = ChatBot()
+# input = input("Ask me anything: ")
+# result = bot.rag_chain.invoke(input)
+# print(result)
