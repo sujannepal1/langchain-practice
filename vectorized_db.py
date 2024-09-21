@@ -11,6 +11,7 @@ class VectorizedDB:
 
     def pinecone_init(self, docs, embeddings):
         # Initialize Pinecone client
+        # TODO make config
         pinecone.init(api_key=os.getenv("PINECONE_API_KEY"), environment="gcp-starter")
         if self.index_name not in pinecone.list_indexes():
             # Create new Index

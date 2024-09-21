@@ -3,7 +3,7 @@ from langchain.schema.runnable import RunnablePassthrough
 
 from embeddings import Embedding
 from llm import Llm
-from verctoriz_db import VectorizedDB
+from vectorized_db import VectorizedDB
 
 
 class ChatBot:
@@ -21,7 +21,8 @@ class ChatBot:
     )
 
 
-# bot = ChatBot()
-# input = input("Ask me anything: ")
-# result = bot.rag_chain.invoke(input)
-# print(result)
+if __name__ == "__main__":
+    bot = ChatBot()
+    input = input("Ask me anything: ")
+    result = bot.rag_chain.invoke(input)
+    print(result)
