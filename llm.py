@@ -1,5 +1,5 @@
 import os
-from langchain.llms import HuggingFaceHub
+from langchain_community.llms import HuggingFaceHub
 from langchain import PromptTemplate
 
 

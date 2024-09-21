@@ -7,11 +7,11 @@ from langchain.text_splitter import CharacterTextSplitter
 
 
 class Embedding:
-    def text_loader(self):
+    @classmethod
+    def text_loader(cls):
         loader = TextLoader("./merchanttrade.txt")
         documents = loader.load()
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=4)
         docs = text_splitter.split_documents(documents)
-        embeddings = HuggingFaceEmbeddings()
-
+        embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
         return docs, embeddings
