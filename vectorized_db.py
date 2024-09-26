@@ -24,3 +24,9 @@ class VectorizedDB:
             doc_search = Pinecone.from_existing_index(self.index_name, embeddings)
 
         return doc_search
+    
+    def qdrant(self):
+        # TODO make configs for qdrant:
+        # https://qdrant.tech/documentation/quickstart/
+        pass
+        
