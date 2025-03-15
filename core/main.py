@@ -1,9 +1,9 @@
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
 
-from embeddings import Embedding
-from llm import Llm
-from vectorized_db import VectorizedDB
+from embedding_model.embeddings import Embedding
+from llm.llm import Llm
+from vector_db.vectorized_db import VectorizedDB
 
 
 class ChatBot:

@@ -1,0 +1,6 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS ITEMS (
+    id BIGSERIAL PRIMARY KEY,
+    org_id TEXT,
+    embedding vector(3));

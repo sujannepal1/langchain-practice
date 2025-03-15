@@ -30,3 +30,11 @@ class VectorizedDB:
         # https://qdrant.tech/documentation/quickstart/
         pass
         
+    
+class PGVector:
+    def __init__(self):
+        # TODO make configs for pgvector
+        pass
+
+    def pgvector(self):
+        pass

@@ -1,4 +1,4 @@
-from main import ChatBot
+from core.main import ChatBot
 import streamlit as st
 
 bot = ChatBot()
